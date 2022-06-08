@@ -129,6 +129,7 @@ nav .nav-right a:hover{
 .button img{
     width: 24px;
 }
+
 .media{   
     margin-top: 20px;
 }
@@ -153,7 +154,7 @@ nav .nav-right a:hover{
 .card{
     border: 1px; 
     width: 400px; 
-    margin: auto;
+    margin: 0 auto;
     border-radius: 12px;
     box-shadow: 6px 6px 10px rgb(185, 185, 185);
 }
