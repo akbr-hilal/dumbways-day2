@@ -16,7 +16,7 @@ nav .nav-left img{
 
 nav .nav-left{
     display: flex;
-    padding-left: 100px;
+    padding-left: 60px;
     flex: 50%;
     align-items: center;
 }
@@ -73,7 +73,7 @@ nav .nav-right a:hover{
     background-color: rgb(190, 190, 190);
     display: flex;
     height: 92vh;
-    padding: 50px 80px;
+    padding: 50px 100px;
    
 } 
 
