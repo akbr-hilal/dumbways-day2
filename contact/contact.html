@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        // 1. tangkap element dengan class menu
+        const menu = document.querySelector(".menu");
+
+        // 2. jika element dengan class menu diklik
+        menu.addEventListener('click', function(e) {
+            // 3. maka ambil element apa yang diklik oleh user
+            const targetMenu = e.target;
+
+            // 4. lalu cek, jika element itu adalah link dengan class menu__link
+            if(targetMenu.classList.contains('menu__link')) {
+                    
+                // 5. maka ambil menu link yang aktif
+                const menuLinkActive = document.querySelector("ul li a.active");
+
+                // 6. lalu cek, Jika menu link active ada dan menu yang di klik user adalah menu yang tidak sama dengan menu yang aktif, (cara cek-nya yaitu dengan membandingkan value attribute href-nya)
+                if(menuLinkActive !== null && targetMenu.getAttribute('href') !== menuLinkActive.getAttribute('href')) {
+
+                    // 7. maka hapus class active pada menu yang sedang aktif
+                    menuLinkActive.classList.remove('active');
+                }
+
+                // 8. terakhir tambahkan class active pada menu yang di klik oleh user
+                targetMenu.classList.add('active');
+            }
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul class="menu">
+                <img src="../asset/img/brandred.png" alt="Logo Dumbways">
+                <li>
+                    <a href="../index.html" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="#">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact/contact.html" target="_blank">Contact Me</a>
+        </div>
+    </nav>
+
+        
+        <div class="container-form">             
+           
+            <form>
+                <h2>GET IN TOUCH</h2>
+                <div>
+                    <label for="input-name">Name</label>
+                    <input type="text" name="" id="input-name">
+                </div>
+        
+                <div>
+                    <label for="input-email">Email</label>
+                    <input type="email" name="" id="input-email">
+                </div>
+        
+                <div>
+                    <label for="input-number">Phone Number</label>
+                    <input type="number" name="" id="input-number">
+                </div>
+        
+                <div>
+                    <label for="input-subject">Subject</label>
+                    <select name="" id="input-subject">
+                        <option value="">Talk</option>
+                        <option value="">Create a project</option>
+                        <option value="">Colaboration</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="input-pesan">Your Massege</label>
+                    <textarea name="" id="input-pesan"></textarea>
+                </div>
+                
+                <button>Submit</button>
+            </form>  
+            
+        </div>    
+</body>
+</html>
