@@ -16,33 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script>
-        // 1. tangkap element dengan class menu
-        const menu = document.querySelector(".menu");
-
-        // 2. jika element dengan class menu diklik
-        menu.addEventListener('click', function(e) {
-            // 3. maka ambil element apa yang diklik oleh user
-            const targetMenu = e.target;
-
-            // 4. lalu cek, jika element itu adalah link dengan class menu__link
-            if(targetMenu.classList.contains('menu__link')) {
-                    
-                // 5. maka ambil menu link yang aktif
-                const menuLinkActive = document.querySelector("ul li a.active");
-
-                // 6. lalu cek, Jika menu link active ada dan menu yang di klik user adalah menu yang tidak sama dengan menu yang aktif, (cara cek-nya yaitu dengan membandingkan value attribute href-nya)
-                if(menuLinkActive !== null && targetMenu.getAttribute('href') !== menuLinkActive.getAttribute('href')) {
-
-                    // 7. maka hapus class active pada menu yang sedang aktif
-                    menuLinkActive.classList.remove('active');
-                }
-
-                // 8. terakhir tambahkan class active pada menu yang di klik oleh user
-                targetMenu.classList.add('active');
-            }
-        });
-    </script>
+  
 </head>
 <body>
     <nav>
@@ -60,45 +34,45 @@
         <div class="nav-right">
             <a href="contact/contact.html" target="_blank">Contact Me</a>
         </div>
-    </nav>
-
-        
-        <div class="container-form">             
-           
-            <form>
+    </nav>        
+    <div class="container-form">             
+        <form>
+            <div>
                 <h2>GET IN TOUCH</h2>
-                <div>
-                    <label for="input-name">Name</label>
-                    <input type="text" name="" id="input-name">
-                </div>
-        
-                <div>
-                    <label for="input-email">Email</label>
-                    <input type="email" name="" id="input-email">
-                </div>
-        
-                <div>
-                    <label for="input-number">Phone Number</label>
-                    <input type="number" name="" id="input-number">
-                </div>
-        
-                <div>
-                    <label for="input-subject">Subject</label>
-                    <select name="" id="input-subject">
-                        <option value="">Talk</option>
-                        <option value="">Create a project</option>
-                        <option value="">Colaboration</option>
-                    </select>
-                </div>
-        
-                <div>
-                    <label for="input-pesan">Your Massege</label>
-                    <textarea name="" id="input-pesan"></textarea>
-                </div>
-                
+            </div>
+            <div>
+                <label for="input-name">Name</label>
+                <input type="text" name="" id="input-name" placeholder="Your Name">
+            </div>
+    
+            <div>
+                <label for="input-email">Email</label>
+                <input type="email" name="" id="input-email" placeholder="your@domain.com">
+            </div>
+    
+            <div>
+                <label for="input-number">Phone Number</label>
+                <input type="number" name="" id="input-number" placeholder="+1 822...">
+            </div>
+    
+            <div>
+                <label for="input-subject">Subject</label>
+                <select name="" id="input-subject" aria-placeholder="your subject">
+                    <option value="">Talk</option>
+                    <option value="">Create a project</option>
+                    <option value="">Colaboration</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="input-pesan">Your Message</label>
+                <textarea name="" id="input-pesan" placeholder="Your Message in 100 words"></textarea>
+            </div>
+            <div class="submit">
                 <button>Submit</button>
-            </form>  
+            </div>
             
-        </div>    
+        </form>  
+    </div>    
 </body>
 </html>

@@ -1,3 +1,9 @@
+body{
+     /* background-color: red; */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 .container-form{
     /* background-color: purple; */
     display: flex;
@@ -15,12 +21,11 @@ form{
     /* background-color: aqua; */
     /* padding: 20px; */
     margin-top: 0;
-    
+    width: 40%;
 }
 
 form div{
     margin-top: 10px;
-    
 }
 
 form label{
@@ -32,7 +37,7 @@ form label{
 form input{
     background-color: rgb(243, 243, 243);
     padding: 10px;
-    width: 95%;
+    width: 100%;
     margin-top: 8px;
     border-radius: 12px;
     border: 1px solid rgb(231, 231, 231);
@@ -41,7 +46,7 @@ form input{
 form select{
     background-color: rgb(243, 243, 243);
     padding: 10px;
-    width: 95%;
+    width: 100%;
     margin-top: 8px;
     border-radius: 12px;
     border: 1px solid rgb(231, 231, 231);
@@ -49,9 +54,10 @@ form select{
 }
 
 form textarea{
+    font-family: p;
     background-color: rgb(243, 243, 243);
     padding: 10px;
-    width: 95%;
+    width: 100%;
     margin-top: 8px;
     border-radius: 12px;
     border: 1px solid rgb(231, 231, 231);
@@ -59,6 +65,10 @@ form textarea{
     height: 60px;
 }
 
+form .submit{
+    display: flex;
+    justify-content: end;
+}
 form button{
     background-color: black;
     color: white;
@@ -69,8 +79,8 @@ form button{
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    float: right;
-    box-sizing: inherit;
+    display: flex;
+  
 }
 
 form button:hover{
