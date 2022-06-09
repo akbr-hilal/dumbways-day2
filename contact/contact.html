@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Script -->
+    <script src="script.js"></script>
   
 </head>
 <body>
@@ -41,32 +43,33 @@
                 <h2>GET IN TOUCH</h2>
             </div>
             <div>
-                <label for="input-name">Name</label>
-                <input type="text" name="" id="input-name" placeholder="Your Name">
+                <label for="inputName">Name</label>
+                <input type="text" name="" id="inputName" placeholder="Your Name">
             </div>
     
             <div>
-                <label for="input-email">Email</label>
-                <input type="email" name="" id="input-email" placeholder="your@domain.com">
+                <label for="inputEmail">Email</label>
+                <input type="email" name="" id="inputEmail" placeholder="your@domain.com">
             </div>
     
             <div>
-                <label for="input-number">Phone Number</label>
-                <input type="number" name="" id="input-number" placeholder="+1 822...">
+                <label for="inputNumber">Phone Number</label>
+                <input type="number" name="" id="inputNumber" placeholder="+62 822...">
             </div>
     
             <div>
-                <label for="input-subject">Subject</label>
-                <select name="" id="input-subject" aria-placeholder="your subject">
-                    <option value="">Talk</option>
-                    <option value="">Create a project</option>
-                    <option value="">Colaboration</option>
+                <label for="inputSubject">Subject</label>
+                <select name="" id="inputSubject" aria-placeholder="your subject">
+                    <option value="" hidden="hidden" selected="selected">Select Subject</option>           
+                    <option value="Talk">Talk</option>
+                    <option value="Create a Project">Create a project</option>
+                    <option value="Collaboration">Collaboration</option>
                 </select>
             </div>
     
             <div>
-                <label for="input-pesan">Your Message</label>
-                <textarea name="" id="input-pesan" placeholder="Your Message in 100 words"></textarea>
+                <label for="inputMessage">Your Message</label>
+                <textarea name="" id="inputMessage" placeholder="Your Message in 100 words"></textarea>
             </div>
             <div class="submit">
                 <button>Submit</button>
