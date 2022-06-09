@@ -72,10 +72,11 @@ nav .nav-right a:hover{
 
 .container{
     background-color: rgb(190, 190, 190);
-    display: flex;
     height: 92vh;
-    padding: 50px 100px;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
 } 
 
 .section{
@@ -89,11 +90,11 @@ nav .nav-right a:hover{
 
 .left{
     /* background-color: rgb(201, 201, 201); */
-    flex: 50%;
-    padding:0 0 0 50px;
+    flex: 60%;
+    padding-left: 80px;
 }
 
-.left p{
+.left h2, p{
     text-align: justify;
 }
 
@@ -101,7 +102,7 @@ nav .nav-right a:hover{
     display: flex;
     /* background-color: aqua; */
     align-items: center;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .button a{
@@ -131,7 +132,7 @@ nav .nav-right a:hover{
 }
 
 .media{   
-    margin-top: 80px;
+    padding-top: 60px;
 }
 
 .media img{
@@ -139,57 +140,47 @@ nav .nav-right a:hover{
     margin-right: 24px;
 }
 
-.media img:hover{
-    width: 46px;
-    margin-top: 0px;
-}
-
 .fa-stack{
     font-size: 24px;
     vertical-align: middle;
-    margin-top:0 100px;
 }
 .fa-stack:hover{
     color: orangered;
     /* font-size: 28px; */
     /* margin-top: 0; */
 }
+
 i{
     vertical-align: middle;
 }
 
 .right{
     /* background-color: rgb(179, 53, 53); */
-    flex: 50%;   
-    /* padding-left: 24px; */
+    flex: 40%;   
 }
 
-.card{
-    width: 400px; 
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 6px 6px 10px rgb(185, 185, 185);
-}
-
-.card img{
-    border-radius: 12px 12px 0 0;
-}
-
-.card h2,p{
+.right div{
+    background-color: white;
+    margin: 40px auto;
+    width: 60%;
     text-align: center;
+    box-shadow: 6px 6px 10px rgb(185, 185, 185);
+    border-radius: 12px;
+}
+
+.right h2{
     margin: 0;
 }
 
-.card p{
-    padding-bottom: 24px;
-    font-weight: 400;
-    color: gray;
+.right p{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 16px;
 }
 
-
-
-
-
+.right img{
+    border-radius: 12px 12px 0 0;
+}
 
 
 
